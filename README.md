@@ -1,3 +1,17 @@
+# SHORTCUTS DOCKER
+
+generate a uber jar (just for learning purposes)
+mvn clean package -Dquarkus.package.type=uber-jar
+
+mvn quarkus:add-extension -Dextensions="container-image-jib"
+
+mvn clean package -Dquarkus.container-image.build=true -Dquarkus.container-image.group=localhost
+
+docker image ls
+docker run -it --name hello-world localhost/camel-hello-world:1.0.0-SNAPSHOT
+docker exec -it hello-world sh
+
+
 # camel-hello-world Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
