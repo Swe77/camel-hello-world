@@ -13,7 +13,7 @@ public class FileServerRoute extends RouteBuilder {
     public static final String CODE_201_MESSAGE = "BAUAU 201";
     public static final String CODE_204_MESSAGE = "BAUAU 204";
     public static final String CODE_500_MESSAGE = "BAUAU 500";
-    public static final String DIRECT_GET_FILES = "DIRECT_GET_FILES";
+    public static final String DIRECT_GET_FILES = "direct:get-file";
     public static final String DIRECT_SAVE_FILE = "direct:save-file";
 
     @Override
