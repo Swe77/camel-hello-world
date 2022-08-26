@@ -1,6 +1,10 @@
 package org.acme;
 
+import java.net.URISyntaxException;
+
+import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.model.dataformat.JsonLibrary;
 
 public class FileServerRoute extends RouteBuilder {
 
@@ -47,6 +51,27 @@ public class FileServerRoute extends RouteBuilder {
             .responseMessage().code(500)
         .message(CODE_500_MESSAGE).endResponseMessage()
             .to(DIRECT_SAVE_FILE);
+    }
+
+    private void createSaveFileRoute() throws URISyntaxException {
+        from (DIRECT_SAVE_FILE)
+        .routeId("save-file")
+        .setHeader(Exchange.FILE_NAME, simple("${header.fileName}"))
+        .to("file:" + FileReaderBean.getServerDirURI())
+        .setHeader(Exchange.HTTP_RESPONSE_CODE, constant(201))
+        .setHeader(Exchange.CONTENT_TYPE, constant(MEDIA_TYPE_TEXT_PLAIN))
+        .setBody(constant(CODE_201_MESSAGE));
+        
+    }
+
+    private void createGetFilesRoute() {
+        from(DIRECT_GET_FILES)
+        .routeId("get-files")
+        .log("### GETTING FILES LIST")
+        .bean(FileReaderBean.class, "listFile")
+        .choice()
+        .when(simple("${body} != null"))
+            .marshal().json(JsonLibrary.Jsonb);
     }
 
     private void createFileServerRoutes() {
