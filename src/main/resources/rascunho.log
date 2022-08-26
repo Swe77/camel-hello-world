@@ -1,0 +1,959 @@
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:build (default) @ camel-hello-world ---
+[INFO] [io.quarkus.deployment.QuarkusAugmentor] Quarkus augmentation completed in 2050ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.767 s
+[INFO] Finished at: 2022-08-25T09:59:10-03:00
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>cd target
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target>cd quarkus-app
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\quarkus-app>dir /b
+app
+lib
+quarkus
+quarkus-app-dependencies.txt
+quarkus-run.jar
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\quarkus-app>java -jar quarkus-run.jar
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/
+2022-08-25 10:00:36,395 INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (main) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime    
+2022-08-25 10:00:36,432 INFO  [org.apa.cam.mai.MainSupport] (main) Apache Camel (Main) 3.18.0 is starting
+2022-08-25 10:00:36,621 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Apache Camel 3.18.0 (camel-1) is starting
+2022-08-25 10:00:36,651 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Routes startup (started:1)
+2022-08-25 10:00:36,652 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main)     Started route1 (timer://example)
+2022-08-25 10:00:36,652 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Apache Camel 3.18.0 (camel-1) started in 111ms (build:0ms init:80ms start:31ms)
+2022-08-25 10:00:36,659 INFO  [io.quarkus] (main) camel-hello-world 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.11.3.Final) started in 1.515s. 
+2022-08-25 10:00:36,660 INFO  [io.quarkus] (main) Profile prod activated.
+2022-08-25 10:00:36,661 INFO  [io.quarkus] (main) Installed features: [camel-core, camel-log, camel-timer, cdi]
+2022-08-25 10:00:37,682 INFO  [org.acm.HelloWorldRoute] (Camel (camel-1) thread #1 - timer://example) Exchange[ExchangePattern: InOnly, BodyType: String, Body: ### HELLO WORLD]
+2022-08-25 10:00:39,657 INFO  [org.acm.HelloWorldRoute] (Camel (camel-1) thread #1 - timer://example) Exchange[ExchangePattern: InOnly, BodyType: String, Body: ### HELLO WORLD]
+2022-08-25 10:00:41,662 INFO  [org.acm.HelloWorldRoute] (Camel (camel-1) thread #1 - timer://example) Exchange[ExchangePattern: InOnly, BodyType: String, Body: ### HELLO WORLD]
+2022-08-25 10:00:43,077 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Shutdown thread) Apache Camel 3.18.0 (camel-1) is shutting down (timeout:45s)
+2022-08-25 10:00:43,154 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Shutdown thread) Routes stopped (stopped:1)
+2022-08-25 10:00:43,155 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Shutdown thread)     Stopped route1 (timer://example)
+2022-08-25 10:00:43,167 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (Shutdown thread) Apache Camel 3.18.0 (camel-1) shutdown in 91ms (uptime:6s)  
+2022-08-25 10:00:43,215 INFO  [io.quarkus] (Shutdown thread) camel-hello-world stopped in 0.149s
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\quarkus-app>
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\quarkus-app>cd ..\..
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>mvn clean package /
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.acme:camel-hello-world >---------------------
+[INFO] Building camel-hello-world 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.589 s
+[INFO] Finished at: 2022-08-25T10:07:33-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "/". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>-
+'-' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>d
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>mvn clean package -Dquarkus.package.type=uber-jar
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.acme:camel-hello-world >---------------------
+[INFO] Building camel-hello-world 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ camel-hello-world ---
+[INFO] Deleting C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ camel-hello-world ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:generate-code (default) @ camel-hello-world ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ camel-hello-world ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\classes
+[INFO] 
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:generate-code-tests (default) @ camel-hello-world ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ camel-hello-world ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ camel-hello-world ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M7:test (default-test) @ camel-hello-world ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ camel-hello-world ---
+[INFO] Building jar: C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\camel-hello-world-1.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:build (default) @ camel-hello-world ---
+[INFO] [io.quarkus.deployment.pkg.steps.JarResultBuildStep] Building uber jar: C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\camel-hello-world-1.0.0-SNAPSHOT-runner.jar
+[WARNING] [io.quarkus.deployment.pkg.steps.JarResultBuildStep] Dependencies with duplicate files detected. The dependencies [org.apache.camel:camel-log::jar:3.18.0[paths: C:\Users\ACER\.m2\repository\org\apache\camel\camel-log\3.18.0\camel-log-3.18.0.jar;], org.apache.camel:camel-timer::jar:3.18.0[paths: C:\Users\ACER\.m2\repository\org\apache\camel\camel-timer\3.18.0\camel-timer-3.18.0.jar;]] contain duplicate files, e.g. component.properties      
+[WARNING] [io.quarkus.deployment.pkg.steps.JarResultBuildStep] Dependencies with duplicate files detected. The dependencies [org.apache.camel:camel-endpointdsl::jar:3.18.0[paths: C:\Users\ACER\.m2\repository\org\apache\camel\camel-endpointdsl\3.18.0\camel-endpointdsl-3.18.0.jar;], org.apache.camel:camel-microprofile-config::jar:3.18.0[paths: C:\Users\ACER\.m2\repository\org\apache\camel\camel-microprofile-config\3.18.0\camel-microprofile-config-3.18.0.jar;], org.apache.camel:camel-base::jar:3.18.0[paths: C:\Users\ACER\.m2\repository\org\apache\camel\camel-base\3.18.0\camel-base-3.18.0.jar;], org.apache.camel:camel-core-processor::jar:3.18.0[paths: C:\Users\ACER\.m2\repository\org\apache\camel\camel-core-processor\3.18.0\camel-core-processor-3.18[INFO] BUILD SUCCESS                                                                                                [INFO] ------------------------------------------------------------------------                                                                        [INFO] Total time:  13.080 s                                                                                                                           [INFO] Finished at: 2022-08-25T10:08:04-03:00         [INFO] ------------------------------------------------------------------------
+                C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>mvn quarkus:add-extension -Dextensions="container-image-jib"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.acme:camel-hello-world >---------------------
+[INFO] Building camel-hello-world 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:add-extension (default-cli) @ camel-hello-world ---
+[INFO] Looking for the newly published extensions in registry.quarkus.io
+[INFO] [SUCCESS] Extension io.quarkus:quarkus-container-image-jib has been installed
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.413 s
+[INFO] Finished at: 2022-08-25T10:13:37-03:00
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>mvn quarkus:list-extensions
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.acme:camel-hello-world >---------------------
+[INFO] Building camel-hello-world 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:list-extensions (default-cli) @ camel-hello-world ---
+[INFO] Current Quarkus extensions available: 
+[INFO]
+[INFO] ? ArtifactId                                         Extension Name
+[INFO] ? blaze-persistence-integration-quarkus              Blaze-Persistence
+[INFO] ? camel-quarkus-activemq                             Camel ActiveMQ
+[INFO] ? camel-quarkus-amqp                                 Camel AMQP
+[INFO] ? camel-quarkus-arangodb                             Camel ArangoDb
+[INFO] ? camel-quarkus-as2                                  Camel AS2
+[INFO] ? camel-quarkus-atlasmap                             Camel AtlasMap
+[INFO] ? camel-quarkus-atom                                 Camel Atom
+[INFO] ? camel-quarkus-attachments                          Camel Attachments
+[INFO] ? camel-quarkus-avro                                 Camel Avro
+[INFO] ? camel-quarkus-avro-rpc                             Camel Avro RPC
+[INFO] ? camel-quarkus-aws2-athena                          Camel AWS 2 Athena
+[INFO] ? camel-quarkus-aws2-cw                              Camel AWS 2 CloudWatch
+[INFO] ? camel-quarkus-aws2-ddb                             Camel AWS 2 DynamoDB
+[INFO] ? camel-quarkus-aws2-ec2                             Camel AWS 2 Elastic Compute Cloud (EC2)
+[INFO] ? camel-quarkus-aws2-ecs                             Camel AWS 2 Elastic Container Service (ECS)
+[INFO] ? camel-quarkus-aws2-eks                             Camel AWS 2 Elastic Kubernetes Service (EKS)
+[INFO] ? camel-quarkus-aws2-eventbridge                     Camel AWS 2 Eventbridge
+[INFO] ? camel-quarkus-aws2-iam                             Camel AWS 2 Identity and Access Management (IAM)
+[INFO] ? camel-quarkus-aws2-kinesis                         Camel AWS 2 Kinesis
+[INFO] ? camel-quarkus-aws2-kms                             Camel AWS 2 Key Management Service (KMS)
+[INFO] ? camel-quarkus-aws2-lambda                          Camel AWS 2 Lambda
+[INFO] ? camel-quarkus-aws2-mq                              Camel AWS 2 MQ
+[INFO] ? camel-quarkus-aws2-msk                             Camel AWS 2 Managed Streaming for Apache Kafka (MSK)
+[INFO] ? camel-quarkus-aws2-s3                              Camel AWS 2 S3 Storage Service
+[INFO] ? camel-quarkus-aws2-ses                             Camel AWS 2 Simple Email Service (SES)
+[INFO] ? camel-quarkus-aws2-sns                             Camel AWS 2 Simple Notification System (SNS)
+[INFO] ? camel-quarkus-aws2-sqs                             Camel AWS 2 Simple Queue Service (SQS)
+[INFO] ? camel-quarkus-aws2-sts                             Camel AWS 2 Security Token Service (STS)
+[INFO] ? camel-quarkus-aws2-translate                       Camel AWS 2 Translate
+[INFO] ? camel-quarkus-azure-eventhubs                      Camel Azure Event Hubs
+[INFO] ? camel-quarkus-azure-storage-blob                   Camel Azure Storage Blob Service
+[INFO] ? camel-quarkus-azure-storage-queue                  Camel Azure Storage Queue Service
+[INFO] ? camel-quarkus-base64                               Camel Base64
+[INFO] ? camel-quarkus-bean                                 Camel Bean
+[INFO] ? camel-quarkus-bean-validator                       Camel Bean Validator
+[INFO] ? camel-quarkus-bindy                                Camel Bindy
+[INFO] ? camel-quarkus-box                                  Camel Box
+[INFO] ? camel-quarkus-braintree                            Camel Braintree
+[INFO] ? camel-quarkus-browse                               Camel Browse
+[INFO] ? camel-quarkus-caffeine                             Camel Caffeine Cache
+[INFO] ? camel-quarkus-caffeine-lrucache                    Camel Caffeine LRUCache
+[INFO] ? camel-quarkus-cassandraql                          Camel Cassandra CQL
+[INFO] ? camel-quarkus-cbor                                 Camel CBOR
+[INFO] ? camel-quarkus-consul                               Camel Consul
+[INFO] ? camel-quarkus-controlbus                           Camel Control Bus
+[INFO] ? camel-quarkus-core                                 Camel Core
+[INFO] ? camel-quarkus-couchdb                              Camel CouchDB
+[INFO] ? camel-quarkus-cron                                 Camel Cron
+[INFO] ? camel-quarkus-crypto                               Camel Crypto (JCE)
+[INFO] ? camel-quarkus-csimple                              Camel CSimple
+[INFO] ? camel-quarkus-csv                                  Camel CSV
+[INFO] ? camel-quarkus-dataformat                           Camel Data Format
+[INFO] ? camel-quarkus-dataset                              Camel Dataset
+[INFO] ? camel-quarkus-datasonnet                           Camel DataSonnet
+[INFO] ? camel-quarkus-debezium-mongodb                     Camel Debezium MongoDB Connector
+[INFO] ? camel-quarkus-debezium-mysql                       Camel Debezium MySQL Connector
+[INFO] ? camel-quarkus-debezium-postgres                    Camel Debezium PostgresSQL Connector
+[INFO] ? camel-quarkus-debezium-sqlserver                   Camel Debezium SQL Server Connector
+[INFO] ? camel-quarkus-digitalocean                         Camel DigitalOcean
+[INFO] ? camel-quarkus-direct                               Camel Direct
+[INFO] ? camel-quarkus-disruptor                            Camel Disruptor
+[INFO] ? camel-quarkus-dozer                                Camel Dozer
+[INFO] ? camel-quarkus-dropbox                              Camel Dropbox
+[INFO] ? camel-quarkus-elasticsearch-rest                   Camel Elasticsearch Rest
+[INFO] ? camel-quarkus-exec                                 Camel Exec
+[INFO] ? camel-quarkus-fhir                                 Camel FHIR
+[INFO] ? camel-quarkus-file                                 Camel File
+[INFO] ? camel-quarkus-file-watch                           Camel File Watch
+[INFO] ? camel-quarkus-flatpack                             Camel Flatpack
+[INFO] ? camel-quarkus-fop                                  Camel FOP
+[INFO] ? camel-quarkus-freemarker                           Camel Freemarker
+[INFO] ? camel-quarkus-ftp                                  Camel FTP
+[INFO] ? camel-quarkus-geocoder                             Camel Geocoder
+[INFO] ? camel-quarkus-git                                  Camel Git
+[INFO] ? camel-quarkus-github                               Camel GitHub
+[INFO] ? camel-quarkus-google-bigquery                      Camel Google BigQuery
+[INFO] ? camel-quarkus-google-calendar                      Camel Google Calendar
+[INFO] ? camel-quarkus-google-drive                         Camel Google Drive
+[INFO] ? camel-quarkus-google-mail                          Camel Google Mail
+[INFO] ? camel-quarkus-google-pubsub                        Camel Google Pubsub
+[INFO] ? camel-quarkus-google-sheets                        Camel Google Sheets
+[INFO] ? camel-quarkus-google-storage                       Camel Google Storage
+[INFO] ? camel-quarkus-graphql                              Camel GraphQL
+[INFO] ? camel-quarkus-grok                                 Camel Grok
+[INFO] ? camel-quarkus-grpc                                 Camel gRPC
+[INFO] ? camel-quarkus-gson                                 Camel Gson
+[INFO] ? camel-quarkus-hazelcast                            Camel Hazelcast Atomic Number
+[INFO] ? camel-quarkus-headersmap                           Camel Headersmap
+[INFO] ? camel-quarkus-hl7                                  Camel HL7
+[INFO] ? camel-quarkus-http                                 Camel HTTP
+[INFO] ? camel-quarkus-ical                                 Camel iCal
+[INFO] ? camel-quarkus-infinispan                           Camel Infinispan
+[INFO] ? camel-quarkus-influxdb                             Camel InfluxDB
+[INFO] ? camel-quarkus-jackson                              Camel Jackson
+[INFO] ? camel-quarkus-jackson-avro                         Camel Avro Jackson
+[INFO] ? camel-quarkus-jackson-protobuf                     Camel Protobuf Jackson
+[INFO] ? camel-quarkus-jacksonxml                           Camel JacksonXML
+[INFO] ? camel-quarkus-jaxb                                 Camel JAXB
+[INFO] ? camel-quarkus-jdbc                                 Camel JDBC
+[INFO] ? camel-quarkus-jfr                                  Camel Jfr
+[INFO] ? camel-quarkus-jira                                 Camel Jira
+[INFO] ? camel-quarkus-jms                                  Camel JMS
+[INFO] ? camel-quarkus-johnzon                              Camel Johnzon
+[INFO] ? camel-quarkus-jolt                                 Camel JOLT
+[INFO] ? camel-quarkus-jpa                                  Camel JPA
+[INFO] ? camel-quarkus-jq                                   Camel JQ
+[INFO] ? camel-quarkus-jsch                                 Camel SCP
+[INFO] ? camel-quarkus-jslt                                 Camel JSLT
+[INFO] ? camel-quarkus-json-validator                       Camel JSON Schema Validator
+[INFO] ? camel-quarkus-jsonata                              Camel JSONATA
+[INFO] ? camel-quarkus-jsonb                                Camel JSON-B
+[INFO] ? camel-quarkus-jsonpath                             Camel JSON Path
+[INFO] ? camel-quarkus-jta                                  Camel JTA
+[INFO] ? camel-quarkus-kafka                                Camel Kafka
+[INFO] ? camel-quarkus-kamelet                              Camel Kamelet
+[INFO] ? camel-quarkus-kotlin                               Camel Kotlin
+[INFO] ? camel-quarkus-kubernetes                           Camel Kubernetes
+[INFO] ? camel-quarkus-kudu                                 Camel Kudu
+[INFO] ? camel-quarkus-language                             Camel Language
+[INFO] ? camel-quarkus-leveldb                              Camel LevelDB
+[INFO] ? camel-quarkus-log                                  Camel Log
+[INFO] ? camel-quarkus-lra                                  Camel LRA
+[INFO] ? camel-quarkus-lumberjack                           Camel Lumberjack
+[INFO] ? camel-quarkus-lzf                                  Camel LZF Deflate Compression
+[INFO] ? camel-quarkus-mail                                 Camel Mail
+[INFO] ? camel-quarkus-master                               Camel Master
+[INFO] ? camel-quarkus-micrometer                           Camel Micrometer
+[INFO] ? camel-quarkus-microprofile-fault-tolerance         Camel Microprofile Fault Tolerance
+[INFO] ? camel-quarkus-microprofile-health                  Camel MicroProfile Health
+[INFO] ? camel-quarkus-microprofile-metrics                 Camel MicroProfile Metrics
+[INFO] ? camel-quarkus-minio                                Camel Minio
+[INFO] ? camel-quarkus-mllp                                 Camel MLLP
+[INFO] ? camel-quarkus-mock                                 Camel Mock
+[INFO] ? camel-quarkus-mongodb                              Camel MongoDB
+[INFO] ? camel-quarkus-mongodb-gridfs                       Camel MongoDB GridFS
+[INFO] ? camel-quarkus-mustache                             Camel Mustache
+[INFO] ? camel-quarkus-mybatis                              Camel MyBatis
+[INFO] ? camel-quarkus-nats                                 Camel Nats
+[INFO] ? camel-quarkus-netty                                Camel Netty
+[INFO] ? camel-quarkus-netty-http                           Camel Netty HTTP
+[INFO] ? camel-quarkus-nitrite                              Camel Nitrite
+[INFO] ? camel-quarkus-oaipmh                               Camel OAI-PMH
+[INFO] ? camel-quarkus-olingo4                              Camel Olingo4
+[INFO] ? camel-quarkus-openapi-java                         Camel OpenAPI Java
+[INFO] ? camel-quarkus-openstack                            Camel OpenStack
+[INFO] ? camel-quarkus-opentelemetry                        Camel OpenTelemetry
+[INFO] ? camel-quarkus-opentracing                          Camel OpenTracing
+[INFO] ? camel-quarkus-optaplanner                          Camel OptaPlanner
+[INFO] ? camel-quarkus-paho                                 Camel Paho
+[INFO] ? camel-quarkus-paho-mqtt5                           Camel Paho MQTT5
+[INFO] ? camel-quarkus-pdf                                  Camel PDF
+[INFO] ? camel-quarkus-pg-replication-slot                  Camel PostgresSQL Replication Slot
+[INFO] ? camel-quarkus-pgevent                              Camel PostgresSQL Event
+[INFO] ? camel-quarkus-platform-http                        Camel Platform HTTP
+[INFO] ? camel-quarkus-protobuf                             Camel Protobuf
+[INFO] ? camel-quarkus-pubnub                               Camel PubNub
+[INFO] ? camel-quarkus-quartz                               Camel Quartz
+[INFO] ? camel-quarkus-qute                                 Camel Qute
+[INFO] ? camel-quarkus-rabbitmq                             Camel RabbitMQ
+[INFO] ? camel-quarkus-reactive-executor                    Camel Reactive Executor
+[INFO] ? camel-quarkus-reactive-streams                     Camel Reactive Streams
+[INFO] ? camel-quarkus-ref                                  Camel Ref
+[INFO] ? camel-quarkus-rest                                 Camel Rest
+[INFO] ? camel-quarkus-rest-openapi                         Camel REST OpenApi
+[INFO] ? camel-quarkus-rss                                  Camel RSS
+[INFO] ? camel-quarkus-saga                                 Camel Saga
+[INFO] ? camel-quarkus-salesforce                           Camel Salesforce
+[INFO] ? camel-quarkus-sap-netweaver                        Camel SAP NetWeaver
+[INFO] ? camel-quarkus-saxon                                Camel XQuery
+[INFO] ? camel-quarkus-scheduler                            Camel Scheduler
+[INFO] ? camel-quarkus-seda                                 Camel SEDA
+[INFO] ? camel-quarkus-servicenow                           Camel ServiceNow
+[INFO] ? camel-quarkus-servlet                              Camel Servlet
+[INFO] ? camel-quarkus-shiro                                Camel Shiro
+[INFO] ? camel-quarkus-sjms                                 Camel Simple JMS
+[INFO] ? camel-quarkus-sjms2                                Camel Simple JMS2
+[INFO] ? camel-quarkus-slack                                Camel Slack
+[INFO] ? camel-quarkus-smallrye-reactive-messaging          Camel SmallRye Reactive Messaging
+[INFO] ? camel-quarkus-snakeyaml                            Camel SnakeYAML
+[INFO] ? camel-quarkus-soap                                 Camel SOAP dataformat
+[INFO] ? camel-quarkus-solr                                 Camel Solr
+[INFO] ? camel-quarkus-splunk                               Camel Splunk
+[INFO] ? camel-quarkus-spring-rabbitmq                      Camel Spring RabbitMQ
+[INFO] ? camel-quarkus-sql                                  Camel SQL
+[INFO] ? camel-quarkus-ssh                                  Camel SSH
+[INFO] ? camel-quarkus-stax                                 Camel StAX
+[INFO] ? camel-quarkus-stream                               Camel Stream
+[INFO] ? camel-quarkus-stringtemplate                       Camel String Template
+[INFO] ? camel-quarkus-syslog                               Camel Syslog
+[INFO] ? camel-quarkus-tarfile                              Camel Tar File
+[INFO] ? camel-quarkus-telegram                             Camel Telegram
+[INFO] ? camel-quarkus-threadpoolfactory-vertx              Camel ThreadPoolFactory Vert.x
+[INFO] ? camel-quarkus-tika                                 Camel Tika
+[INFO] ? camel-quarkus-timer                                Camel Timer
+[INFO] ? camel-quarkus-twilio                               Camel Twilio
+[INFO] ? camel-quarkus-twitter                              Camel Twitter
+[INFO] ? camel-quarkus-univocity-parsers                    Camel uniVocity CSV
+[INFO] ? camel-quarkus-validator                            Camel Validator
+[INFO] ? camel-quarkus-velocity                             Camel Velocity
+[INFO] ? camel-quarkus-vertx                                Camel Vert.x
+[INFO] ? camel-quarkus-vertx-http                           Camel Vert.x HTTP Client
+[INFO] ? camel-quarkus-vertx-websocket                      Camel Vert.x WebSocket
+[INFO] ? camel-quarkus-vm                                   Camel VM
+[INFO] ? camel-quarkus-weather                              Camel Weather
+[INFO] ? camel-quarkus-xchange                              Camel XChange
+[INFO] ? camel-quarkus-xml-io-dsl                           Camel XML IO DSL
+[INFO] ? camel-quarkus-xml-jaxb                             Camel XML JAXB
+[INFO] ? camel-quarkus-xml-jaxp                             Camel XML JAXP
+[INFO] ? camel-quarkus-xmlsecurity                          Camel XML Security Sign
+[INFO] ? camel-quarkus-xpath                                Camel XPath
+[INFO] ? camel-quarkus-xslt                                 Camel XSLT
+[INFO] ? camel-quarkus-xstream                              Camel XStream
+[INFO] ? camel-quarkus-yaml-dsl                             Camel YAML DSL
+[INFO] ? camel-quarkus-zendesk                              Camel Zendesk
+[INFO] ? camel-quarkus-zip-deflater                         Camel Zip Deflate Compression
+[INFO] ? camel-quarkus-zipfile                              Camel Zip File
+[INFO]   camunda-bpm-quarkus-engine                         Camunda Platform Engine
+[INFO] ? cassandra-quarkus-client                           DataStax Apache Cassandra client
+[INFO] ? debezium-quarkus-outbox                            Debezium Quarkus Outbox
+[INFO] ? kogito-addons-quarkus-events-decisions             Kogito Add-On Events Decisions
+[INFO] ? kogito-addons-quarkus-events-mongodb               Kogito Add-On Events MongoDB
+[INFO] ? kogito-addons-quarkus-events-predictions           Kogito Add-On Events Predictions
+[INFO] ? kogito-addons-quarkus-events-process               Kogito Add-On Events Process
+[INFO] ? kogito-addons-quarkus-events-rules                 Kogito Add-On Events Rules
+[INFO] ? kogito-addons-quarkus-jobs-management              Kogito Add-On Jobs Service
+[INFO] ? kogito-addons-quarkus-jobs-messaging               Kogito Add-On Jobs Service Messaging
+[INFO] ? kogito-addons-quarkus-knative-eventing             Kogito Add-On Knative Eventing
+[INFO] ? kogito-addons-quarkus-kubernetes                   Kogito Add-On Kubernetes
+[INFO] ? kogito-addons-quarkus-mail                         Kogito Add-On User Tasks e-mail
+[INFO] ? kogito-addons-quarkus-messaging                    Kogito Add-On Process Messaging
+[INFO] ? kogito-addons-quarkus-monitoring-elastic           Kogito Add-On Monitoring Elasticsearch
+[INFO] ? kogito-addons-quarkus-monitoring-prometheus        Kogito Add-On Monitoring Prometheus
+[INFO] ? kogito-addons-quarkus-persistence-filesystem       Kogito Add-On Persistence FileSystem
+[INFO] ? kogito-addons-quarkus-persistence-infinispan       Kogito Add-On Persistence Infinispan
+[INFO] ? kogito-addons-quarkus-persistence-jdbc             Kogito Add-On Persistence JDBC
+[INFO] ? kogito-addons-quarkus-persistence-kafka            Kogito Add-On Persistence Kafka
+[INFO] ? kogito-addons-quarkus-persistence-mongodb          Kogito Add-On Persistence MongoDB
+[INFO] ? kogito-addons-quarkus-persistence-postgresql       Kogito Add-On Persistence PostgreSQL
+[INFO] ? kogito-addons-quarkus-process-management           Kogito Add-On Process Management
+[INFO] ? kogito-addons-quarkus-process-svg                  Kogito Add-On Process SVG
+[INFO] ? kogito-addons-quarkus-source-files                 Kogito Add-On Source Files
+[INFO] ? kogito-addons-quarkus-task-management              Kogito Add-On Task Management
+[INFO] ? kogito-addons-quarkus-task-notification            Kogito Add-On Task Notification
+[INFO] ? kogito-addons-quarkus-tracing-decision             Kogito Add-On Tracing Decision
+[INFO] ? kogito-quarkus                                     Kogito
+[INFO] ? kogito-quarkus-decisions                           Kogito - Decisions (DMN)
+[INFO] ? kogito-quarkus-predictions                         Kogito - Predictions (PMML)
+[INFO] ? kogito-quarkus-processes                           Kogito - Process (jBPM)
+[INFO] ? kogito-quarkus-rules                               Kogito - Rules (DRL)
+[INFO] ? kogito-quarkus-serverless-workflow                 Kogito - Serverless Workflow
+[INFO] ? kogito-quarkus-serverless-workflow-devui           Kogito Serverless Workflow Tools
+[INFO]   myfaces-quarkus                                    MyFaces Core
+[INFO] ? optaplanner-quarkus                                OptaPlanner
+[INFO] ? optaplanner-quarkus-benchmark                      OptaPlanner benchmark
+[INFO] ? optaplanner-quarkus-jackson                        OptaPlanner Jackson
+[INFO] ? optaplanner-quarkus-jsonb                          OptaPlanner JSON-B
+[INFO] ? quarkus-agroal                                     Agroal - Database connection pool
+[INFO]   quarkus-amazon-alexa                               Amazon Alexa
+[INFO] ? quarkus-amazon-cognito-user-pools                  Amazon Cognito User Pools
+[INFO] ? quarkus-amazon-dynamodb                            Amazon DynamoDB
+[INFO] ? quarkus-amazon-iam                                 Amazon IAM
+[INFO] ? quarkus-amazon-kms                                 Amazon KMS
+[INFO] ? quarkus-amazon-lambda                              AWS Lambda
+[INFO] ? quarkus-amazon-lambda-http                         AWS Lambda HTTP
+[INFO] ? quarkus-amazon-lambda-rest                         AWS Lambda Gateway REST API
+[INFO] ? quarkus-amazon-lambda-xray                         AWS Lambda X-Ray
+[INFO] ? quarkus-amazon-s3                                  Amazon S3
+[INFO] ? quarkus-amazon-secretsmanager                      Amazon Secrets Manager
+[INFO] ? quarkus-amazon-ses                                 Amazon SES
+[INFO] ? quarkus-amazon-sns                                 Amazon SNS
+[INFO] ? quarkus-amazon-sqs                                 Amazon SQS
+[INFO] ? quarkus-amazon-ssm                                 Amazon SSM
+[INFO] ? quarkus-apicurio-registry-avro                     Apicurio Registry - Avro
+[INFO]   quarkus-apistax                                    APIstax
+[INFO]   quarkus-artemis-jms                                Artemis JMS
+[INFO]   quarkus-arthas                                     Arthas
+[INFO] ? quarkus-avro                                       Apache Avro
+[INFO] ? quarkus-awt                                        AWT
+[INFO] ? quarkus-azure-functions-http                       Azure Functions HTTP
+[INFO] ? quarkus-cache                                      Cache
+[INFO] ? quarkus-config-consul                              Consul Config
+[INFO] ? quarkus-config-yaml                                YAML Configuration
+[INFO] ? quarkus-confluent-registry-avro                    Confluent Schema Registry - Avro
+[INFO] ? quarkus-container-image-buildpack                  Container Image Buildpack
+[INFO] ? quarkus-container-image-docker                     Container Image Docker
+[INFO] ? quarkus-container-image-jib                        Container Image Jib
+[INFO] ? quarkus-container-image-openshift                  Container Image OpenShift
+[INFO] ? quarkus-container-image-s2i                        Container Image S2I
+[INFO]   quarkus-cucumber                                   Cucumber
+[INFO]   quarkus-cxf                                        Quarkus CXF
+[INFO]   quarkus-dapr                                       Dapr
+[INFO]   quarkus-datadog-opentracing                        Datadog Opentracing
+[INFO]   quarkus-doma                                       Doma - Database access framework
+[INFO]   quarkus-elasticsearch-reactive                     Elasticsearch Reactive
+[INFO] ? quarkus-elasticsearch-rest-client                  Elasticsearch REST client
+[INFO] ? quarkus-elasticsearch-rest-high-level-client       Elasticsearch REST High Level Client
+[INFO] ? quarkus-elytron-security-jdbc                      Elytron Security JDBC
+[INFO] ? quarkus-elytron-security-ldap                      Elytron Security LDAP Realm
+[INFO] ? quarkus-elytron-security-oauth2                    Elytron Security OAuth 2.0
+[INFO] ? quarkus-elytron-security-properties-file           Elytron Security Properties File
+[INFO]   quarkus-file-vault                                 File Vault
+[INFO] ? quarkus-flyway                                     Flyway
+[INFO]   quarkus-freemarker                                 Quarkus Freemarker
+[INFO] ? quarkus-funqy-amazon-lambda                        Funqy AWS Lambda Binding
+[INFO] ? quarkus-funqy-google-cloud-functions               Funqy Google Cloud Functions
+[INFO] ? quarkus-funqy-http                                 Funqy HTTP Binding
+[INFO] ? quarkus-funqy-knative-events                       Funqy Knative Events Binding
+[INFO]   quarkus-github-api                                 GitHub API
+[INFO]   quarkus-github-app                                 GitHub App
+[INFO]   quarkus-github-app-command-airline                 GitHub App Command Airline
+[INFO] ? quarkus-google-cloud-bigquery                      Google Cloud Bigquery
+[INFO] ? quarkus-google-cloud-bigtable                      Google Cloud Bigtable
+[INFO] ? quarkus-google-cloud-firestore                     Google Cloud Firestore
+[INFO] ? quarkus-google-cloud-functions                     Google Cloud Functions
+[INFO] ? quarkus-google-cloud-functions-http                Google Cloud Functions HTTP
+[INFO] ? quarkus-google-cloud-pubsub                        Google Cloud Pubsub
+[INFO] ? quarkus-google-cloud-secret-manager                Google Cloud Secret Manager
+[INFO] ? quarkus-google-cloud-spanner                       Google Cloud Spanner
+[INFO] ? quarkus-google-cloud-storage                       Google Cloud Storage
+[INFO] ? quarkus-grpc                                       gRPC
+[INFO] ? quarkus-hal                                        Hypertext Application Language (HAL)
+[INFO] ? quarkus-hazelcast-client                           Hazelcast Client
+[INFO]   quarkus-helm                                       Quarkus - Helm
+[INFO] ? quarkus-hibernate-envers                           Hibernate Envers
+[INFO] ? quarkus-hibernate-orm                              Hibernate ORM
+[INFO] ? quarkus-hibernate-orm-panache                      Hibernate ORM with Panache
+[INFO] ? quarkus-hibernate-orm-panache-kotlin               Hibernate ORM with Panache and Kotlin
+[INFO] ? quarkus-hibernate-orm-rest-data-panache            REST resources for Hibernate ORM with Panache
+[INFO] ? quarkus-hibernate-reactive                         Hibernate Reactive
+[INFO] ? quarkus-hibernate-reactive-panache                 Hibernate Reactive with Panache
+[INFO] ? quarkus-hibernate-reactive-rest-data-panache       REST resources for Hibernate Reactive with Panache
+[INFO] ? quarkus-hibernate-search-orm-coordination-outb...  Hibernate Search Coordination with Outbox Polling
+[INFO] ? quarkus-hibernate-search-orm-elasticsearch         Hibernate Search + Elasticsearch
+[INFO]   quarkus-hibernate-search-orm-elasticsearch-aws     Hibernate Search + Elasticsearch - AWS authentication and request signing
+[INFO]   quarkus-hibernate-types                            Quarkus - Hibernate Types - Runtime
+[INFO] ? quarkus-hibernate-validator                        Hibernate Validator
+[INFO] ? quarkus-infinispan-client                          Infinispan Client
+[INFO] ? quarkus-jackson                                    Jackson
+[INFO]   quarkus-jackson-jq                                 Jackson Jq
+[INFO] ? quarkus-jacoco                                     Jacoco - Code Coverage
+[INFO] ? quarkus-jaxb                                       JAXB
+[INFO]   quarkus-jberet                                     JBeret - Batch Processing
+[INFO]   quarkus-jberet-rest                                JBeret - REST
+[INFO] ? quarkus-jdbc-db2                                   JDBC Driver - DB2
+[INFO] ? quarkus-jdbc-derby                                 JDBC Driver - Derby
+[INFO] ? quarkus-jdbc-h2                                    JDBC Driver - H2
+[INFO] ? quarkus-jdbc-mariadb                               JDBC Driver - MariaDB
+[INFO] ? quarkus-jdbc-mssql                                 JDBC Driver - Microsoft SQL Server
+[INFO] ? quarkus-jdbc-mysql                                 JDBC Driver - MySQL
+[INFO] ? quarkus-jdbc-oracle                                JDBC Driver - Oracle
+[INFO] ? quarkus-jdbc-postgresql                            JDBC Driver - PostgreSQL
+[INFO]   quarkus-jdbc-sqlite                                JDBC Driver - Sqlite
+[INFO]   quarkus-jgit                                       JGit
+[INFO]   quarkus-jgrapht                                    JGraphT
+[INFO]   quarkus-jooq                                       Quarkus jOOQ - Runtime
+[INFO]   quarkus-jsch                                       JSch
+[INFO] ? quarkus-jsonb                                      JSON-B
+[INFO] ? quarkus-jsonp                                      JSON-P
+[INFO] ? quarkus-kafka-client                               Apache Kafka Client
+[INFO] ? quarkus-kafka-streams                              Apache Kafka Streams
+[INFO]   quarkus-kerberos                                   Kerberos
+[INFO] ? quarkus-keycloak-admin-client                      Keycloak Admin Client
+[INFO] ? quarkus-keycloak-admin-client-reactive             Quarkus - Keycloak Admin Client - Reactive - Runtime
+[INFO] ? quarkus-keycloak-authorization                     Keycloak Authorization
+[INFO] ? quarkus-kind                                       Kind
+[INFO] ? quarkus-kotlin                                     Kotlin
+[INFO] ? quarkus-kubernetes                                 Kubernetes
+[INFO] ? quarkus-kubernetes-client                          Kubernetes Client
+[INFO] ? quarkus-kubernetes-config                          Kubernetes Config
+[INFO] ? quarkus-kubernetes-service-binding                 Kubernetes Service Binding
+[INFO] ? quarkus-liquibase                                  Liquibase
+[INFO] ? quarkus-liquibase-mongodb                          Liquibase MongoDB
+[INFO]   quarkus-logging-cloudwatch                         Logging Cloudwatch
+[INFO] ? quarkus-logging-gelf                               Logging GELF
+[INFO] ? quarkus-logging-json                               Logging JSON
+[INFO]   quarkus-logging-json                               Logging JSON Jackson
+[INFO]   quarkus-logging-logback                            Logging Logback
+[INFO]   quarkus-logging-manager                            Logging manager
+[INFO]   quarkus-logging-sentry                             Logging Sentry
+[INFO]   quarkus-logging-splunk                             Splunk logging extension - Runtime
+[INFO]   quarkus-lucene                                     Lucene
+[INFO] ? quarkus-mailer                                     Mailer
+[INFO]   quarkus-maven-resolver                             Maven Resolver
+[INFO] ? quarkus-micrometer                                 Micrometer metrics
+[INFO]   quarkus-micrometer-registry-azure-monitor          Micrometer registry - Azure Monitor
+[INFO]   quarkus-micrometer-registry-datadog                Micrometer registry - Datadog
+[INFO]   quarkus-micrometer-registry-jmx                    Micrometer registry - JMX
+[INFO] ? quarkus-micrometer-registry-prometheus             Micrometer Registry Prometheus
+[INFO]   quarkus-micrometer-registry-signalfx               Micrometer registry - SignalFX
+[INFO]   quarkus-micrometer-registry-stackdriver            Micrometer registry - Stackdriver
+[INFO]   quarkus-micrometer-registry-statsd                 Micrometer registry - StatsD
+[INFO]   quarkus-microprofile                               Microprofile
+[INFO] ? quarkus-minikube                                   Minikube
+[INFO]   quarkus-minio                                      Minio Client extension
+[INFO] ? quarkus-mongodb-client                             MongoDB client
+[INFO] ? quarkus-mongodb-panache                            MongoDB with Panache
+[INFO] ? quarkus-mongodb-panache-kotlin                     MongoDB with Panache for Kotlin
+[INFO] ? quarkus-mongodb-rest-data-panache                  REST resources for MongoDB with Panache
+[INFO]   quarkus-morphia                                    Morphia
+[INFO] ? quarkus-mutiny                                     Mutiny
+[INFO]   quarkus-mybatis                                    MyBatis SQL Mapper
+[INFO]   quarkus-mybatis-plus                               An powerful enhanced toolkit of MyBatis for simplify development
+[INFO] ? quarkus-narayana-jta                               Narayana JTA - Transaction manager
+[INFO] ? quarkus-narayana-lra                               Narayana LRA - LRA Participant Support
+[INFO] ? quarkus-narayana-stm                               Narayana STM - Software Transactional Memory
+[INFO]   quarkus-neo4j                                      Neo4j client
+[INFO]   quarkus-ngrok                                      Ngrok
+[INFO] ? quarkus-oidc                                       OpenID Connect
+[INFO] ? quarkus-oidc-client                                OpenID Connect Client
+[INFO] ? quarkus-oidc-client-filter                         OpenID Connect Client Filter
+[INFO] ? quarkus-oidc-client-reactive-filter                OpenID Connect Client Filter Reactive
+[INFO] ? quarkus-oidc-token-propagation                     OpenID Connect Token Propagation
+[INFO] ? quarkus-oidc-token-propagation-reactive            OpenID Connect Token Propagation Reactive
+[INFO]   quarkus-openapi-generator                          OpenAPI Generator - REST Client Generator
+[INFO]   quarkus-opencv                                     OpenCV
+[INFO] ? quarkus-openshift                                  OpenShift
+[INFO] ? quarkus-openshift-client                           OpenShift Client
+[INFO] ? quarkus-opentelemetry                              OpenTelemetry
+[INFO] ? quarkus-opentelemetry-exporter-jaeger              OpenTelemetry exporter: Jaeger
+[INFO] ? quarkus-opentelemetry-exporter-otlp                OpenTelemetry exporter: OTLP
+[INFO]   quarkus-opentelemetry-rest-client                  OpenTelemetry REST Client
+[INFO]   quarkus-operator-sdk                               Quarkus - Operator SDK
+[INFO]   quarkus-operator-sdk-bundle-generator              Quarkus - Operator SDK - Bundle Generator
+[INFO] ? quarkus-picocli                                    Picocli
+[INFO]   quarkus-pooled-jms                                 Messaginghub Pooled JMS
+[INFO]   quarkus-prettytime                                 PrettyTime
+[INFO] ? quarkus-qpid-jms                                   AMQP 1.0 JMS client - Apache Qpid JMS
+[INFO]   quarkus-qson                                       QSON
+[INFO] ? quarkus-quartz                                     Quartz
+[INFO]   quarkus-quinoa                                     Quinoa
+[INFO] ? quarkus-qute                                       Qute Templating
+[INFO]   quarkus-rabbitmq-client                            RabbitMQ Client
+[INFO] ? quarkus-reactive-db2-client                        Reactive DB2 client
+[INFO]   quarkus-reactive-messaging-http                    Reactive HTTP and WebSocket Connector
+[INFO] ? quarkus-reactive-mssql-client                      Reactive MS SQL client
+[INFO] ? quarkus-reactive-mysql-client                      Reactive MySQL client
+[INFO] ? quarkus-reactive-oracle-client                     Reactive Oracle client
+[INFO] ? quarkus-reactive-pg-client                         Reactive PostgreSQL client
+[INFO] ? quarkus-reactive-routes                            Reactive Routes
+[INFO] ? quarkus-redis-client                               Redis Client
+[INFO]   quarkus-renarde                                    Renarde
+[INFO] ? quarkus-rest-client                                REST Client Classic
+[INFO] ? quarkus-rest-client-jackson                        REST Client Classic Jackson
+[INFO] ? quarkus-rest-client-jaxb                           REST Client Classic JAXB
+[INFO] ? quarkus-rest-client-jsonb                          REST Client Classic JSON-B
+[INFO] ? quarkus-rest-client-mutiny                         REST Client Classic Mutiny support
+[INFO] ? quarkus-rest-client-reactive                       REST Client Reactive
+[INFO] ? quarkus-rest-client-reactive-jackson               REST Client Reactive Jackson
+[INFO] ? quarkus-rest-client-reactive-jaxb                  REST Client Reactive JAXB
+[INFO] ? quarkus-rest-client-reactive-jsonb                 REST Client Reactive JSON-B
+[INFO] ? quarkus-rest-client-reactive-kotlin-serialization  REST Client Reactive Kotlin Serialization
+[INFO] ? quarkus-resteasy                                   RESTEasy Classic
+[INFO] ? quarkus-resteasy-jackson                           RESTEasy Classic Jackson
+[INFO] ? quarkus-resteasy-jaxb                              RESTEasy Classic JAXB
+[INFO] ? quarkus-resteasy-jsonb                             RESTEasy Classic JSON-B
+[INFO] ? quarkus-resteasy-links                             RESTEasy Classic Links
+[INFO] ? quarkus-resteasy-multipart                         RESTEasy Classic Multipart
+[INFO] ? quarkus-resteasy-mutiny                            RESTEasy Classic Mutiny
+[INFO] ? quarkus-resteasy-qute                              RESTEasy Classic Qute
+[INFO] ? quarkus-resteasy-reactive                          RESTEasy Reactive
+[INFO] ? quarkus-resteasy-reactive-jackson                  RESTEasy Reactive Jackson
+[INFO] ? quarkus-resteasy-reactive-jaxb                     RESTEasy Reactive JAXB
+[INFO] ? quarkus-resteasy-reactive-jsonb                    RESTEasy Reactive JSON-B
+[INFO] ? quarkus-resteasy-reactive-kotlin-serialization     RESTEasy Reactive Kotlin Serialization
+[INFO] ? quarkus-resteasy-reactive-links                    RESTEasy Reactive Links
+[INFO] ? quarkus-resteasy-reactive-qute                     RESTEasy Reactive Qute
+[INFO]   quarkus-rsocket                                    Quarkus - Rsocket
+[INFO] ? quarkus-scala                                      Scala
+[INFO]   quarkus-scala3                                     Scala3
+[INFO] ? quarkus-scheduler                                  Scheduler - tasks
+[INFO] ? quarkus-security-jpa                               Security JPA
+[INFO] ? quarkus-security-webauthn                          Security WebAuthn
+[INFO] ? quarkus-smallrye-context-propagation               SmallRye Context Propagation
+[INFO] ? quarkus-smallrye-fault-tolerance                   SmallRye Fault Tolerance
+[INFO] ? quarkus-smallrye-graphql                           SmallRye GraphQL
+[INFO] ? quarkus-smallrye-graphql-client                    SmallRye GraphQL Client
+[INFO] ? quarkus-smallrye-health                            SmallRye Health
+[INFO] ? quarkus-smallrye-jwt                               SmallRye JWT
+[INFO] ? quarkus-smallrye-jwt-build                         SmallRye JWT Build
+[INFO] ? quarkus-smallrye-metrics                           SmallRye Metrics
+[INFO] ? quarkus-smallrye-openapi                           SmallRye OpenAPI
+[INFO] ? quarkus-smallrye-opentracing                       SmallRye OpenTracing
+[INFO] ? quarkus-smallrye-reactive-messaging                SmallRye Reactive Messaging
+[INFO] ? quarkus-smallrye-reactive-messaging-amqp           SmallRye Reactive Messaging - AMQP Connector
+[INFO] ? quarkus-smallrye-reactive-messaging-kafka          SmallRye Reactive Messaging - Kafka Connector
+[INFO] ? quarkus-smallrye-reactive-messaging-mqtt           SmallRye Reactive Messaging - MQTT Connector
+[INFO] ? quarkus-smallrye-reactive-messaging-rabbitmq       SmallRye Reactive Messaging - RabbitMQ Connector
+[INFO] ? quarkus-smallrye-stork                             SmallRye Stork
+[INFO] ? quarkus-spring-boot-properties                     Quarkus Extension for Spring Boot properties
+[INFO] ? quarkus-spring-cache                               Quarkus Extension for Spring Cache API
+[INFO] ? quarkus-spring-cloud-config-client                 Quarkus Extension for Spring Cloud Config Client
+[INFO] ? quarkus-spring-data-jpa                            Quarkus Extension for Spring Data JPA API
+[INFO] ? quarkus-spring-data-rest                           Quarkus Extension for Spring Data REST
+[INFO] ? quarkus-spring-di                                  Quarkus Extension for Spring DI API
+[INFO] ? quarkus-spring-scheduled                           Quarkus Extension for Spring Scheduled
+[INFO] ? quarkus-spring-security                            Quarkus Extension for Spring Security API
+[INFO] ? quarkus-spring-web                                 Quarkus Extension for Spring Web API
+[INFO]   quarkus-tekton-client                              Quarkiverse - Tekton Client - Runtime
+[INFO]   quarkus-tika                                       Apache Tika
+[INFO] ? quarkus-undertow                                   Undertow Servlet
+[INFO]   quarkus-univocity-parsers                          Univocity Parsers
+[INFO]   quarkus-unleash                                    Quarkus - Unleash - Runtime
+[INFO] ? quarkus-vault                                      Vault
+[INFO] ? quarkus-vertx                                      Eclipse Vert.x
+[INFO] ? quarkus-vertx-graphql                              Eclipse Vert.x GraphQL
+[INFO] ? quarkus-webjars-locator                            WebJar Locator
+[INFO] ? quarkus-websockets                                 WebSockets
+[INFO] ? quarkus-websockets-client                          WebSockets Client
+[INFO]   quarkus-xmlsec                                     XML Security
+[INFO]   quarkus-zeebe                                      Quarkus - Zeebe - Runtime
+[INFO] ? runtime-tools-quarkus-extension                    Kogito Runtime Tools
+[INFO]
+[INFO] To get more information, append `-Dformat=full` to your command line.
+[INFO]
+[INFO] To list only extensions from specific category, append `-Dcategory="categoryId"` to your command line.
+[INFO]
+[INFO] Add an extension to your project by adding the dependency to your pom.xml or use `./mvnw quarkus:add-extension -Dextensions="artifactId"`       
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.358 s
+[INFO] Finished at: 2022-08-25T10:15:05-03:00
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>mvn clean package -Dquarkus.container-image.build=true -Dquarkus.conta
+iner-image.group=localhost
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.acme:camel-hello-world >---------------------
+[INFO] Building camel-hello-world 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ camel-hello-world ---
+[INFO] Deleting C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ camel-hello-world ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:generate-code (default) @ camel-hello-world ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ camel-hello-world ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\classes
+[INFO] 
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:generate-code-tests (default) @ camel-hello-world ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ camel-hello-world ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ camel-hello-world ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M7:test (default-test) @ camel-hello-world ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ camel-hello-world ---
+[INFO] Building jar: C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world\target\camel-hello-world-1.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- quarkus-maven-plugin:2.11.3.Final:build (default) @ camel-hello-world ---
+[INFO] [io.quarkus.container.image.jib.deployment.JibProcessor] Starting (local) container image build for jar using jib.
+[INFO] [io.quarkus.container.image.jib.deployment.JibProcessor] Using docker to run the native image builder
+docker.elastic.co/elasticsearch/elasticsearch-oss   7.10.2            b313026e6fbd   19 months ago    699MB                postgres                                            12.2              0f10374e5170   2 years ago      314MB
+jaegertracing/all-in-one                            1.17              174ca8761b4a   2 years ago      49.2MB                grafana/grafana                                     6.5.0             15186a7d4aed   2 years ago      228MB
+paketobuildpacks/builder                            tiny              55ca0ef9c9f0   42 years ago     413MB
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>docker run -it --name hello-world localhost/camel=hello=world:1.0.0   docker: invalid reference format.
+See 'docker run --help'.
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>docker run -it --name camel-hello-world localhost/camel=hello=world:1.0.0
+docker: invalid reference format.
+See 'docker run --help'.
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>docker run -it --name hello-world localhost/camel-hello-world:1.0.0   
+Unable to find image 'localhost/camel-hello-world:1.0.0' locally
+docker: Error response from daemon: Get "http://localhost/v2/": dial tcp [::1]:80: connect: connection refused.
+See 'docker run --help'.
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>docker image ls                                                       REPOSITORY                                          TAG               IMAGE ID       CREATED         SIZE
+localhost/camel-hello-world                         1.0.0-SNAPSHOT    41e9e54c26ef   3 minutes ago   377MB
+rabbitmq                                            3.10-management   321a17c29307   2 weeks ago     262MB
+quay.io/quarkus/ubi-quarkus-native-image            21.3-java11       7390556b8c6e   6 months ago    1.24GB
+mongo                                               5.0               5285cb69ea55   6 months ago    698MB
+postgres                                            14.1              da2cb49d7a8d   7 months ago    374MB
+quay.io/keycloak/keycloak-x                         16.1.0            b7f14b3b9b3d   8 months ago    718MB
+testcontainers/ryuk                                 0.3.3             64f4b02dc986   10 months ago   12MB
+postgres                                            13.2              82b8b88e26bc   15 months ago   314MB
+mongo                                               4.2               dc77715107a9   15 months ago   387MB
+graylog/graylog                                     4.0               d88ade57e407   15 months ago   733MB
+paketobuildpacks/run                                tiny-cnb          58b2ff78bb50   16 months ago   17.3MB
+vromero/activemq-artemis                            2.11.0            91203262e25c   18 months ago   375MB
+docker.elastic.co/elasticsearch/elasticsearch-oss   7.10.2            b313026e6fbd   19 months ago   699MB
+postgres                                            12.2              0f10374e5170   2 years ago     314MB
+jaegertracing/all-in-one                            1.17              174ca8761b4a   2 years ago     49.2MB
+grafana/grafana                                     6.5.0             15186a7d4aed   2 years ago     228MB
+paketobuildpacks/builder                            tiny              55ca0ef9c9f0   42 years ago    413MB
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>docker run -it --name hello-world localhost/camel=hello=world:1.0.0-SNAPSHOT
+docker: invalid reference format.
+See 'docker run --help'.
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>docker run -it --name hello-world localhost/camel-hello-world:1.0.0-SNAPSHOT 
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2022-08-25 13:20:26,015 INFO  [org.apa.cam.qua.cor.CamelBootstrapRecorder] (main) Bootstrap runtime: org.apache.camel.quarkus.main.CamelMainRuntime
+2022-08-25 13:20:26,060 INFO  [org.apa.cam.mai.MainSupport] (main) Apache Camel (Main) 3.18.0 is starting
+2022-08-25 13:20:26,245 INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Apache Camel 3.18.0 (camel-1) is starting
+                                                                                           docker run -it --name hello-world localhost/camel-hello-world:1.0.0-SNAPSHOT
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>mvn dependency:tree
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.acme:camel-hello-world >---------------------
+[INFO] Building camel-hello-world 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ camel-hello-world ---
+[INFO] org.acme:camel-hello-world:jar:1.0.0-SNAPSHOT
+[INFO] +- org.apache.camel.quarkus:camel-quarkus-log:jar:2.11.0:compile
+[INFO] |  \- org.apache.camel:camel-log:jar:3.18.0:compile
+[INFO] |     \- org.apache.camel:camel-support:jar:3.18.0:compile
+[INFO] +- org.apache.camel.quarkus:camel-quarkus-core:jar:2.11.0:compile
+[INFO] |  +- io.quarkus:quarkus-core:jar:2.11.3.Final:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO] |  |  +- jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[INFO] |  |  |  +- jakarta.el:jakarta.el-api:jar:3.0.3:compile
+[INFO] |  |  |  \- jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile
+[INFO] |  |  +- jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[INFO] |  |  +- io.quarkus:quarkus-ide-launcher:jar:2.11.3.Final:compile
+[INFO] |  |  +- io.smallrye.config:smallrye-config:jar:2.10.1:compile
+[INFO] |  |  |  \- io.smallrye.config:smallrye-config-core:jar:2.10.1:compile
+[INFO] |  |  |     +- io.smallrye.common:smallrye-common-annotation:jar:1.13.0:compile
+[INFO] |  |  |     +- io.smallrye.common:smallrye-common-expression:jar:1.13.0:compile
+[INFO] |  |  |     |  \- io.smallrye.common:smallrye-common-function:jar:1.13.0:compile
+[INFO] |  |  |     +- io.smallrye.common:smallrye-common-constraint:jar:1.13.0:compile
+[INFO] |  |  |     +- io.smallrye.common:smallrye-common-classloader:jar:1.13.0:compile
+[INFO] |  |  |     \- io.smallrye.config:smallrye-config-common:jar:2.10.1:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.5.0.Final:compile
+[INFO] |  |  +- org.jboss.logmanager:jboss-logmanager-embedded:jar:1.0.10:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging-annotations:jar:2.2.1.Final:compile
+[INFO] |  |  +- org.jboss.threads:jboss-threads:jar:3.4.2.Final:compile
+[INFO] |  |  +- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO] |  |  +- org.jboss.slf4j:slf4j-jboss-logmanager:jar:1.1.0.Final:compile
+[INFO] |  |  +- org.graalvm.sdk:graal-sdk:jar:22.1.0:compile
+[INFO] |  |  +- org.wildfly.common:wildfly-common:jar:1.5.4.Final-format-001:compile
+[INFO] |  |  +- io.quarkus:quarkus-bootstrap-runner:jar:2.11.3.Final:compile
+[INFO] |  |  |  \- io.github.crac:org-crac:jar:0.1.1:compile
+[INFO] |  |  \- io.quarkus:quarkus-fs-util:jar:0.0.9:compile
+[INFO] |  +- io.quarkus:quarkus-development-mode-spi:jar:2.11.3.Final:compile
+[INFO] |  +- org.apache.camel:camel-base:jar:3.18.0:compile
+[INFO] |  |  +- org.apache.camel:camel-api:jar:3.18.0:compile
+[INFO] |  |  +- org.apache.camel:camel-management-api:jar:3.18.0:compile
+[INFO] |  |  \- org.apache.camel:camel-util:jar:3.18.0:compile
+[INFO] |  +- org.apache.camel:camel-componentdsl:jar:3.18.0:compile
+[INFO] |  +- org.apache.camel:camel-core-catalog:jar:3.18.0:compile
+[INFO] |  |  \- org.apache.camel:camel-tooling-model:jar:3.18.0:compile
+[INFO] |  |     \- org.apache.camel:camel-util-json:jar:3.18.0:compile
+[INFO] |  +- org.apache.camel:camel-core-engine:jar:3.18.0:compile
+[INFO] |  |  +- org.apache.camel:camel-base-engine:jar:3.18.0:compile
+[INFO] |  |  \- org.apache.camel:camel-core-reifier:jar:3.18.0:compile
+[INFO] |  +- org.apache.camel:camel-core-languages:jar:3.18.0:compile
+[INFO] |  |  \- org.apache.camel:camel-core-model:jar:3.18.0:compile
+[INFO] |  +- org.apache.camel:camel-core-processor:jar:3.18.0:compile
+[INFO] |  +- org.apache.camel:camel-endpointdsl:jar:3.18.0:compile
+[INFO] |  +- org.apache.camel:camel-main:jar:3.18.0:compile
+[INFO] |  +- org.apache.camel:camel-microprofile-config:jar:3.18.0:compile
+[INFO] |  |  \- org.eclipse.microprofile.config:microprofile-config-api:jar:2.0.1:compile
+[INFO] |  \- org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:jar:2.0.0.Final:compile
+[INFO] +- org.apache.camel.quarkus:camel-quarkus-timer:jar:2.11.0:compile
+[INFO] |  \- org.apache.camel:camel-timer:jar:3.18.0:compile
+[INFO] +- org.apache.camel.quarkus:camel-quarkus-rest:jar:2.11.0:compile
+[INFO] |  +- org.apache.camel.quarkus:camel-quarkus-platform-http:jar:2.11.0:compile
+[INFO] |  |  +- org.apache.camel.quarkus:camel-quarkus-attachments:jar:2.11.0:compile
+[INFO] |  |  |  +- org.apache.camel:camel-attachments:jar:3.18.0:compile
+[INFO] |  |  |  \- com.sun.activation:jakarta.activation:jar:1.2.1:compile
+[INFO] |  |  +- org.apache.camel:camel-platform-http-vertx:jar:3.18.0:compile
+[INFO] |  |  |  +- org.apache.camel:camel-platform-http:jar:3.18.0:compile
+[INFO] |  |  |  |  \- org.apache.camel:camel-console:jar:3.18.0:compile
+[INFO] |  |  |  +- org.apache.camel:camel-vertx-common:jar:3.18.0:compile
+[INFO] |  |  |  |  \- io.vertx:vertx-core:jar:4.3.2:compile
+[INFO] |  |  |  |     +- io.netty:netty-common:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     +- io.netty:netty-buffer:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     +- io.netty:netty-transport:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     +- io.netty:netty-handler:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     |  \- io.netty:netty-transport-native-unix-common:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     +- io.netty:netty-handler-proxy:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     |  \- io.netty:netty-codec-socks:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     +- io.netty:netty-codec-http:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     +- io.netty:netty-codec-http2:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     +- io.netty:netty-resolver:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     +- io.netty:netty-resolver-dns:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     |  \- io.netty:netty-codec-dns:jar:4.1.78.Final:compile
+[INFO] |  |  |  |     \- com.fasterxml.jackson.core:jackson-core:jar:2.13.3:compile
+[INFO] |  |  |  \- io.vertx:vertx-web:jar:4.3.2:compile
+[INFO] |  |  |     +- io.vertx:vertx-web-common:jar:4.3.2:compile
+[INFO] |  |  |     +- io.vertx:vertx-auth-common:jar:4.3.2:compile
+[INFO] |  |  |     \- io.vertx:vertx-bridge-common:jar:4.3.2:compile
+[INFO] |  |  \- io.quarkus:quarkus-vertx-http:jar:2.11.3.Final:compile
+[INFO] |  |     +- io.quarkus:quarkus-security-runtime-spi:jar:2.11.3.Final:compile
+[INFO] |  |     +- io.quarkus:quarkus-credentials:jar:2.11.3.Final:compile
+[INFO] |  |     +- io.quarkus:quarkus-mutiny:jar:2.11.3.Final:compile
+[INFO] |  |     |  +- io.smallrye.reactive:mutiny:jar:1.6.0:compile
+[INFO] |  |     |  |  \- org.reactivestreams:reactive-streams:jar:1.0.3:compile
+[INFO] |  |     |  +- io.quarkus:quarkus-smallrye-context-propagation:jar:2.11.3.Final:compile
+[INFO] |  |     |  |  \- io.smallrye:smallrye-context-propagation:jar:1.2.2:compile
+[INFO] |  |     |  |     +- io.smallrye:smallrye-context-propagation-api:jar:1.2.2:compile
+[INFO] |  |     |  |     \- io.smallrye:smallrye-context-propagation-storage:jar:1.2.2:compile
+[INFO] |  |     |  \- io.smallrye.reactive:mutiny-smallrye-context-propagation:jar:1.6.0:compile
+[INFO] |  |     +- io.smallrye.common:smallrye-common-vertx-context:jar:1.13.0:compile
+[INFO] |  |     +- io.quarkus:quarkus-vertx-http-dev-console-runtime-spi:jar:2.11.3.Final:compile
+[INFO] |  |     +- io.quarkus.security:quarkus-security:jar:1.1.4.Final:compile
+[INFO] |  |     +- io.quarkus:quarkus-vertx:jar:2.11.3.Final:compile
+[INFO] |  |     |  +- io.quarkus:quarkus-netty:jar:2.11.3.Final:compile
+[INFO] |  |     |  |  +- io.netty:netty-codec:jar:4.1.78.Final:compile
+[INFO] |  |     |  |  \- com.aayushatharva.brotli4j:brotli4j:jar:1.7.1:compile
+[INFO] |  |     |  |     \- com.aayushatharva.brotli4j:native-windows-x86_64:jar:1.7.1:compile
+[INFO] |  |     |  +- io.netty:netty-codec-haproxy:jar:4.1.78.Final:compile
+[INFO] |  |     |  +- io.quarkus:quarkus-vertx-latebound-mdc-provider:jar:2.11.3.Final:compile
+[INFO] |  |     |  +- io.smallrye.reactive:smallrye-mutiny-vertx-core:jar:2.24.1:compile
+[INFO] |  |     |  |  +- io.smallrye.reactive:smallrye-mutiny-vertx-runtime:jar:2.24.1:compile
+[INFO] |  |     |  |  \- io.smallrye.reactive:vertx-mutiny-generator:jar:2.24.1:compile
+[INFO] |  |     |  |     \- io.vertx:vertx-codegen:jar:4.3.2:compile
+[INFO] |  |     |  \- io.smallrye:smallrye-fault-tolerance-vertx:jar:5.5.0:compile
+[INFO] |  |     \- io.smallrye.reactive:smallrye-mutiny-vertx-web:jar:2.24.1:compile
+[INFO] |  |        +- io.smallrye.reactive:smallrye-mutiny-vertx-web-common:jar:2.24.1:compile
+[INFO] |  |        +- io.smallrye.reactive:smallrye-mutiny-vertx-auth-common:jar:2.24.1:compile
+[INFO] |  |        +- io.smallrye.reactive:smallrye-mutiny-vertx-bridge-common:jar:2.24.1:compile
+[INFO] |  |        \- io.smallrye.reactive:smallrye-mutiny-vertx-uri-template:jar:2.24.1:compile
+[INFO] |  |           \- io.vertx:vertx-uri-template:jar:4.3.2:compile
+[INFO] |  \- org.apache.camel:camel-rest:jar:3.18.0:compile
+[INFO] +- io.quarkus:quarkus-arc:jar:2.11.3.Final:compile
+[INFO] |  +- io.quarkus.arc:arc:jar:2.11.3.Final:compile
+[INFO] |  |  \- jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile
+[INFO] |  \- org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:jar:1.2:compile
+[INFO] \- io.quarkus:quarkus-junit5:jar:2.11.3.Final:test
+[INFO]    +- io.quarkus:quarkus-bootstrap-core:jar:2.11.3.Final:test
+[INFO]    |  +- io.quarkus:quarkus-bootstrap-app-model:jar:2.11.3.Final:test
+[INFO]    |  +- io.quarkus:quarkus-bootstrap-maven-resolver:jar:2.11.3.Final:test
+[INFO]    |  |  +- org.apache.maven:maven-embedder:jar:3.8.6:test
+[INFO]    |  |  |  +- org.apache.maven:maven-settings:jar:3.8.6:test
+[INFO]    |  |  |  +- org.apache.maven:maven-core:jar:3.8.6:test
+[INFO]    |  |  |  |  +- org.apache.maven:maven-artifact:jar:3.8.6:test
+[INFO]    |  |  |  |  \- org.codehaus.plexus:plexus-component-annotations:jar:2.1.0:test
+[INFO]    |  |  |  +- org.apache.maven:maven-plugin-api:jar:3.8.6:test
+[INFO]    |  |  |  +- org.apache.maven:maven-model:jar:3.8.6:test
+[INFO]    |  |  |  +- org.apache.maven:maven-model-builder:jar:3.8.6:test
+[INFO]    |  |  |  +- org.apache.maven:maven-builder-support:jar:3.8.6:test
+[INFO]    |  |  |  +- org.apache.maven.resolver:maven-resolver-api:jar:1.6.3:test
+[INFO]    |  |  |  +- org.apache.maven.resolver:maven-resolver-util:jar:1.6.3:test
+[INFO]    |  |  |  +- org.apache.maven.shared:maven-shared-utils:jar:3.3.4:test
+[INFO]    |  |  |  |  \- commons-io:commons-io:jar:2.11.0:test
+[INFO]    |  |  |  +- com.google.inject:guice:jar:no_aop:4.2.2:test
+[INFO]    |  |  |  |  \- com.google.guava:guava:jar:31.1-jre:test
+[INFO]    |  |  |  |     \- com.google.guava:failureaccess:jar:1.0.1:test
+[INFO]    |  |  |  +- org.codehaus.plexus:plexus-classworlds:jar:2.6.0:test
+[INFO]    |  |  |  +- org.codehaus.plexus:plexus-sec-dispatcher:jar:2.0:test
+[INFO]    |  |  |  +- org.codehaus.plexus:plexus-cipher:jar:2.0:test
+[INFO]    |  |  |  \- commons-cli:commons-cli:jar:1.4:test
+[INFO]    |  |  +- org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.5:test
+[INFO]    |  |  +- org.apache.maven:maven-settings-builder:jar:3.8.6:test
+[INFO]    |  |  |  \- org.codehaus.plexus:plexus-interpolation:jar:1.26:test
+[INFO]    |  |  +- org.apache.maven:maven-resolver-provider:jar:3.8.6:test
+[INFO]    |  |  |  +- org.apache.maven:maven-repository-metadata:jar:3.8.6:test
+[INFO]    |  |  |  +- org.apache.maven.resolver:maven-resolver-spi:jar:1.6.3:test
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.613 s
+[INFO] Finished at: 2022-08-25T21:21:09-03:00
+[INFO] ------------------------------------------------------------------------
+
+C:\Users\ACER\Documents\LITERATURA\JAVA\QUARKUS\CAMEL\PROJECTS\camel-hello-world>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
