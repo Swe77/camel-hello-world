@@ -11,6 +11,9 @@ docker image ls
 docker run -it --name hello-world localhost/camel-hello-world:1.0.0-SNAPSHOT
 docker exec -it hello-world sh
 
+SHOW DEPENDENCY TREE
+mvn dependency:tree
+
 
 # camel-hello-world Project
 
