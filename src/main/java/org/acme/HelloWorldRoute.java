@@ -11,6 +11,10 @@ public class HelloWorldRoute extends RouteBuilder {
         .simple("### HELLO ${header.me}")
         .log("### REQUEST RESPONDED WITH BODY: ${body}");
         
+        from("platform-http:/helloWorld?httpMethodRestrict=GET")
+            .routeId("rest-hello-world")
+            .setBody(constant("### HELLO WORLD"))
+            .log("### REQUEST RESPONDED WITH BODY: ${body}");
 
 
         // rest("/helloWorld")
