@@ -6,9 +6,20 @@ public class HelloWorldRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("timer:example?period=2000")
-        .setBody(constant("### HELLO WORLD"))
-        .to("log:" + HelloWorldRoute.class.getName());
+        from("rest:get:hello/{me}")
+        .transform()
+        .simple("### HELLO ${header.me}")
+        .log("### REQUEST RESPONDED WITH BODY: ${body}");
+        
+
+
+        // rest("/helloWorld")
+        //         .get()
+        //         .route()
+        //         .routeId("rest-hello-world")
+        //         .setBody(constant("Hello World \n"))
+        //         .log("Request responded with body: ${body}")
+        //         .endRest();
     }
 
 }
